@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  service:
+    restart: always
+    image: service-image:latest
+#    volumes:
+#    - "/path/to/dir:/dir"
+    ports:
+    - "8080:8080"
+    environment:
+      LANG: en_US.UTF-8
